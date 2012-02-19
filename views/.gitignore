@@ -1,0 +1,12 @@
+# Compiled Python
+*.pyc
+
+# Sublimetexteditor
+*.sublime-workspace
+
+# Cygwin
+*.stackdump
+
+# Windows
+Thumbs.db 
+Desktop.ini
