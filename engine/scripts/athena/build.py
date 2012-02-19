@@ -1,9 +1,13 @@
 #!/usr/bin/env python
 
+# Configuration
 path_views = '../../../views/'
 path_views_cdn = '../../../views_cdn/'
-views_ext = 'html' # Html or PHP
 
+# If development use html instead if production red framework uses PHP /see views/* in redframework
+production = 0; 
+
+# Paths
 muncher = 'athena/bin/muncher/munch'
 optipng = 'athena/bin/optipng-0.6.5.exe'
 jpegtrans = 'athena/bin/jpg8dexe/jpegtran.exe' # @todo Compare with cjpeg ?
@@ -13,6 +17,12 @@ googleclosure = 'athena/bin/googlecc.jar'
 ignore_css = [
 	'.typography'
 ]
+
+if production == 0:
+	views_ext = 'html' # Html or PHP
+
+if production == 1:
+	views_ext = 'php' # Html or PHP
 
 '''
 GET VALUES
@@ -181,15 +191,17 @@ def compileall():
 	localtime = time.asctime(time.localtime(time.time()))
 
 	# Readme
-	print "Generating Readme and .gitignore"
+	print "Generating Readme"
 	fo = open(path_views_cdn + "readme.txt", "wb")
 	fo.write("Athena BUILD " + "CDN" + "\nat " + localtime + "\n" + "\n".join(all_compiled));
 	fo.close()
 
-	# Git ignore
-	fo = open(path_views_cdn + ".gitignore", "wb")
-	fo.write("*\n!.gitignore");
-	fo.close()
+	# Git Ignore
+	if production == 0:
+		print "Generating Readme"
+		fo = open(path_views_cdn + ".gitignore", "wb")
+		fo.write("*\n!.gitignore");
+		fo.close()
 
 # LOAD
 try:
