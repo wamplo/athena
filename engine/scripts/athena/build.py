@@ -181,13 +181,14 @@ def compileall():
 	localtime = time.asctime(time.localtime(time.time()))
 
 	# Readme
+	print "Generating Readme and .gitignore"
 	fo = open(path_views_cdn + "readme.txt", "wb")
 	fo.write("Athena BUILD " + "CDN" + "\nat " + localtime + "\n" + "\n".join(all_compiled));
 	fo.close()
 
 	# Git ignore
 	fo = open(path_views_cdn + ".gitignore", "wb")
-	fo.write("");
+	fo.write("*\n!.gitignore\n!readme.txt");
 	fo.close()
 
 # LOAD

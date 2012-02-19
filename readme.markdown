@@ -1,8 +1,8 @@
-  ___,      _                       
- /   |     | |                      
-|    | _|_ | |     _   _  _    __,  
-|    |  |  |/ \   |/  / |/ |  /  |  
- \__/\_/|_/|   |_/|__/  |  |_/\_/|_/ optimzing with :heart:
+      ___,      _                       
+     /   |     | |                      
+    |    | _|_ | |     _   _  _    __,  
+    |    |  |  |/ \   |/  / |/ |  /  |  
+     \__/\_/|_/|   |_/|__/  |  |_/\_/|_/ optimzing with :heart:
 
 Athena is the goddess of wisdom, courage, inspiration, civilization, law and justice, just warfare, mathematics, strength, strategy, the arts, crafts, and skill. 
 
