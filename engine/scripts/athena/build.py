@@ -188,7 +188,7 @@ def compileall():
 
 	# Git ignore
 	fo = open(path_views_cdn + ".gitignore", "wb")
-	fo.write("*\n!.gitignore\n!readme.txt");
+	fo.write("*\n!.gitignore");
 	fo.close()
 
 # LOAD
