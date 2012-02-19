@@ -42,9 +42,9 @@ she compiles a folder `/views` into optimized views `/views_cdn` becouse bandwit
 ## How
 
 - Instal python via Cygwin http://cygwin.com/install.html (recommanded) or Python via http://www.python.org/download/
-- Via command promt Cygwin with Python + Java run `./build.py` in /engine/scripts/anthena
+- Via command promt Cygwin with Python + Java run `./build.py` in `/engine/scripts/anthena`
 - *Magic happens here*
-- Check in views_cdn/folder/index.html for the result(check index.html same in views)
+- Check in `views_cdn/*/index.html` for the result(check index.html same in views)
 
 ## Todo
 
