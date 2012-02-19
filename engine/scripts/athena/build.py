@@ -179,8 +179,15 @@ def compileall():
 		all_compiled.append(jsreadme)
 
 	localtime = time.asctime(time.localtime(time.time()))
+
+	# Readme
 	fo = open(path_views_cdn + "readme.txt", "wb")
 	fo.write("Athena BUILD " + "CDN" + "\nat " + localtime + "\n" + "\n".join(all_compiled));
+	fo.close()
+
+	# Git ignore
+	fo = open(path_views_cdn + ".gitignore", "wb")
+	fo.write("");
 	fo.close()
 
 # LOAD
