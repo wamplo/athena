@@ -10,3 +10,7 @@
 # Windows
 Thumbs.db 
 Desktop.ini
+
+# Not shared yet
+
+engine/scripts/athena/deploy_cdn.py

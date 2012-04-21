@@ -9,7 +9,7 @@ production = 0;
 
 # Paths
 muncher = 'athena/bin/muncher/munch'
-optipng = 'athena/bin/optipng-0.6.5.exe'
+optipng = 'athena/bin/optipng-0.7.1.exe'
 jpegtrans = 'athena/bin/jpg8dexe/jpegtran.exe' # @todo Compare with cjpeg ?
 googleclosure = 'athena/bin/googlecc.jar'
 
